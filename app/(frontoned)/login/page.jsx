@@ -1,7 +1,7 @@
 import React from "react";
 
 import Signin from "@/components/auth/Signin";
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 
 const SignIn = async () => {
   return (

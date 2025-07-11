@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactUs/contactform";
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 import { getSiteData } from "@/lib/functions";
 import { MapPin, Phone, Mail } from "lucide-react";
 import Link from "next/link";

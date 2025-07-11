@@ -17,7 +17,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 
 export default function Page() {
   function getTodayDate() {

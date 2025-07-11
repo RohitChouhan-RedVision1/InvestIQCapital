@@ -12,7 +12,7 @@ import Link from "next/link";
 import React from "react";
 import styles from '../footerpage.module.css'
 import InnerBanner from "@/components/InnerBanner/InnerBanner";
-// import InnerBanner from "@/components/innerBanner/InnerBanner";
+
 
 const PrivacyPage = async () => {
     const sitedata = await getSiteData();

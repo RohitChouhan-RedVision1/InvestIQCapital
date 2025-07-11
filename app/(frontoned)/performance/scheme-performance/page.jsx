@@ -10,7 +10,7 @@ import { generateSchemePDF } from "@/lib/generatePdf";
 import { SchemePerformanceChart } from "@/components/charts/schemePerformanceChart";
 import SchemePerformanceTable from "@/components/schemePerformanceTable";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 
 export default function Page() {
     function getTodayDate() {

@@ -9,7 +9,7 @@ import { FaFilePdf } from "react-icons/fa6";
 import SipPerformanceTable from "@/components/sipPerformanceTable";
 import { generatePDF } from "@/lib/generatePdf";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 
 export default function Page() {
   function getTodayDate() {

@@ -10,7 +10,7 @@ import {
   import Link from "next/link";
   import React from "react";
 import { getSiteData } from "../layout";
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 import { AboutSection } from "@/components/AboutUs/aboutus";
 import HeaderAboutus from "@/components/Aboutuspage/Header/header";
 import { getAboutus, getAboutusteams, getmissionvission } from "@/lib/functions";

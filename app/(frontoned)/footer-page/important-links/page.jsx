@@ -1,6 +1,6 @@
 "use client";
-import InnerBanner from '@/components/innerBanner/InnerBanner';
-// import InnerBanner from '@/components/innerBanner/InnerBanner';
+
+import InnerBanner from '@/components/InnerBanner/InnerBanner';
 import styles from '../footerpage.module.css'
 
 export default function ImportantLinks() {

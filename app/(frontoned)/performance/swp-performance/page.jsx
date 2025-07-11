@@ -24,7 +24,7 @@ import { Label } from "@radix-ui/react-label";
 import { SwpPerformanceChart } from "@/components/charts/swpPerformanceChart";
 import SwpPerformanceTable from "@/components/swpPerformanceTable";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 
 export default function Page() {
     const [loading, setLoading] = useState(false);

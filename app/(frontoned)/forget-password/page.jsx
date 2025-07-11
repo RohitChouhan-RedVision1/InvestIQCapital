@@ -3,7 +3,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/next-auth";
 import { redirect } from "next/navigation";
 import ForgetPassword from "@/components/auth/ForgetPassword";
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 
 const SignIn = async () => {
   return (

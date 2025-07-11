@@ -1,5 +1,5 @@
 
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 import FundCategoryTabs from "@/components/FundCategoryTabs/page";
  
 export default function MarketUpdate() {

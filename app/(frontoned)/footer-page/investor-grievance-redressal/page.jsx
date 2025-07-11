@@ -1,5 +1,4 @@
 
-// import InnerBanner from '@/components/innerBanner/InnerBanner';
 import InnerBanner from '@/components/InnerBanner/InnerBanner';
 import styles from '../footerpage.module.css'
 import { getSiteData } from "@/lib/functions";

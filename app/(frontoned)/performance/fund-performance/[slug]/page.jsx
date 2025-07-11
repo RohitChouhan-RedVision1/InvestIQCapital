@@ -1,5 +1,5 @@
 "use client";
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 import React, { useEffect, useState } from "react";
 import CryptoJS from "crypto-js";
 import axios from "axios";

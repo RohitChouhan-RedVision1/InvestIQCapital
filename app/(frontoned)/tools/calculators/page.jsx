@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 // import InnerBanner from "@/components/InnerBanner/InnerBanner";
 import CalculatorTabs from "./CalculatorTabs"; // new client component
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 
 export default function Page() {
   return (
