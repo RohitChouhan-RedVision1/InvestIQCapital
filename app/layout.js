@@ -19,16 +19,16 @@ const urbanist = Urbanist({
 
 export const metadata = {
   title: {
-    default: "MockUp Red Vission",
-    template: "%s - Red Vission",
+    default: "InvestIQ Capital",
+    template: "%s -InvestIQ Capital",
   },
   description:
-    "MockUp Red Vission: Your trusted partner for expert financial guidance, strategic investments, and wealth management solutions. Empowering you to secure a prosperous future.",
+    "InvestIQ Capital: Your trusted partner for expert financial guidance, strategic investments, and wealth management solutions. Empowering you to secure a prosperous future.",
   twitter: {
     card: "summary_large_image",
-    site: "@RFWealth",
+    site: "@InvestIQCapital",
   },
-  author: "MockUp Red Vission Team",
+  author: "InvestIQ Capital Team",
 };
 
 export default function RootLayout({ children }) {
