@@ -12,7 +12,9 @@ export default function HeroSection({sitedata}) {
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
         >
-          Invest in <br /> Professionally <br /> Managed Funds
+          Welcome to <br /> 
+InvestIQ Capital
+<br /> <span className='text-2xl'>“Where Vision Meets Value”</span>
         </motion.h1>
         <motion.p className="text-gray-300  mb-5 max-w-xl"
          initial={{ y: 20, opacity: 0 }}

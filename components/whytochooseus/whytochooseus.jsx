@@ -57,14 +57,7 @@ const WhyChooseUs = () => {
         className="text-[var(--rv-white)] main_section max-w-screen-xl mx-auto "
         ref={mainCounterRef}
       >
-        <motion.h2
-          className="text-4xl md:text-4xl font-bold mb-6"
-          initial={{ x: -100, opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : {}}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          Why <span className="text-[var(--rv-secondary)]">Choose</span> Us?
-        </motion.h2>
+        
 
         <div className="flex flex-col lg:flex-row items-start gap-4">
           {/* Left: Image + Paragraph (50%) */}
@@ -74,18 +67,15 @@ const WhyChooseUs = () => {
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
           >
-            <div className="relative w-full h-[300px] lg:h-[400px] rounded-md overflow-hidden">
+            <div className="relative w-full h-[250px] lg:h-[520px] rounded-md overflow-hidden">
               <Image
-                src="/whytochoose.png"
+                src="/investiq/wcu.png"
                 alt="Analytics"
                 fill
                 className="object-cover"
               />
             </div>
-            <p className="text-[var(--rv-white)]/80">
-              At InvestIQ Capital, we are more than just a wealth management firm—we are your partners in building a secure, purpose-driven financial future. Our client-first approach, backed by intelligence and quality, ensures that every financial roadmap we craft reflects your goals, values, and life ambitions.
-
-            </p>
+          
           </motion.div>
 
           {/* Right: Counters (50%) */}
@@ -95,7 +85,21 @@ const WhyChooseUs = () => {
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
           >
-            <div className="count" data-step="1">
+<motion.h2
+          className="text-4xl md:text-4xl font-bold mb-6"
+          initial={{ x: -100, opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          Why <span className="text-[var(--rv-secondary)]">Choose</span> Us?
+        </motion.h2> 
+        
+            <p className="text-[var(--rv-white)]/80">
+              At <strong>InvestIQ Capital</strong>, we are more than just a wealth management firm—we are your partners in building a <strong>Secure, Purpose-Driven Financial Future</strong>. Our client-first approach, backed by <strong>Intelligence</strong> and <strong>Quality</strong>, ensures that every <strong>Financial Roadmap</strong> we craft reflects your <strong>Goals</strong>, <strong>Values</strong>, and <strong>
+                Life Ambitions</strong>.
+
+            </p>
+            {/* <div className="count" data-step="1">
               <div
                 className="text-4xl font-bold text-[var(--rv-secondary)] counter-number"
                 data-target="10"
@@ -153,7 +157,7 @@ const WhyChooseUs = () => {
               <p className="text-lg border-t border-gray-700 pt-2">
                 People Managed
               </p>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </section>

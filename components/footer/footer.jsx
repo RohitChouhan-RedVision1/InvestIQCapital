@@ -6,6 +6,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaMapLocation, FaPinterest, FaTwit
 import { FaEnvelope, FaMap, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion"; 
 import { servicedata } from "@/data/services";
+import { HiLocationMarker } from "react-icons/hi";
 
 
 
@@ -73,13 +74,13 @@ export function Footer({sitedata,socialMedia}) {
               <Image
                 src="/logo.png"
                 alt="Logo"
-                width={150} 
+                width={200} 
                 height={100}
               />
             </Link>
           </div>
               <p className="mt-5 text-[var(--rv-white)] text-md hover:text-[var(--rv-secondary)] font-urbanist ">
-              {sitedata?.description}
+              {sitedata?.email}
               </p>
             
               
@@ -121,10 +122,10 @@ export function Footer({sitedata,socialMedia}) {
 
             {/* Get in Touch */}
             <div>
-            <h4 className="relative text-lg text-[var(--rv-white)] font-semibold mb-4 ">
+            {/* <h4 className="relative text-lg text-[var(--rv-white)] font-semibold mb-4 ">
                 Get In Touch
-              </h4>
-              <ul className="space-y-5 text-sm text-[var(--rv-white)]">
+              </h4> */}
+              {/* <ul className="space-y-5 text-sm text-[var(--rv-white)]">
                 <li className="flex gap-2 hover:text-[var(--secondary)] cursor-pointer">
                   <span><FaPhone className=""/></span>
                  <h5 className="font-medium">
@@ -165,7 +166,24 @@ export function Footer({sitedata,socialMedia}) {
                   </a>
                   </h5>
                 </li>
-              </ul>
+              </ul> */}
+<div className="flex flex-col items-center text-center text-white">
+          <HiLocationMarker className="text-red-500 text-xl mb-1 " />
+          <h3 className="font-semibold">Kolkata Office</h3>
+          <p className="text-sm">3A, Ripoon Street, Mezzanine Floor,<br />
+          Kolkata, WB, IN - 700016</p>
+          <p className="text-sm mt-1">+91 98305 77115 / +91 89109 15792</p>
+        </div>
+
+        {/* Jabalpur Office */}
+        <div className="flex flex-col items-center text-center text-white">
+          <HiLocationMarker className="text-red-500 text-xl mb-1" />
+          <h3 className="font-semibold">Jabalpur Office</h3>
+          <p className="text-sm">1345, Home Science Road, Napier Town,<br />
+          Jabalpur, MP, IN - 482001</p>
+          <p className="text-sm mt-1">+91 93011 12222 / +91 89109 15792</p>
+        </div>
+              
             </div>
           </motion.div>
         </div>

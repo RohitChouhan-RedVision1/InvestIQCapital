@@ -131,12 +131,12 @@ const handleSearchChange = (e) => {
 
   return (
     <div
-      className={`fixed top-0 w-full z-50 ${
+      className={`fixed  w-full z-50 ${
         isMobileMenuOpen
           ? "bg-[var(--rv-ternary)]"
           : isScrolled
-          ? "bg-[var(--rv-ternary)] shadow-lg"
-          : "bg-transparent"
+          ? "bg-[var(--rv-ternary)] top-0 shadow-lg"
+          : "bg-transparent top-10"
       }`}
     >
       <nav
@@ -148,7 +148,7 @@ const handleSearchChange = (e) => {
               <Image
                 src="/logo.png"
                 alt="logo"
-                width={100}
+                width={isScrolled ? 100 : 200} // shrink on scroll
                 height={30}
                 className="rounded"
                 // layout="responsive"

@@ -1,7 +1,7 @@
 import ContactForm from "@/components/ContactUs/contactform";
 import InnerBanner from "@/components/InnerBanner/InnerBanner";
 import { getSiteData } from "@/lib/functions";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, PhoneCall, Mails } from "lucide-react";
 import Link from "next/link";
 export default async function ContactUs() {
   const sitedata = await getSiteData();
@@ -13,24 +13,47 @@ export default async function ContactUs() {
       {/* Contact Info Cards */}
       <div className="flex flex-col  gap-4 overflow-hidden rounded-lg ">
         {/* Call Us */}
-        <div className="flex flex-col md:flex-row gap-4 w-full justify-center items-center text-center">
-          <div className="bg-[var(--rv-primary)] text-[var(--rv-white)] p-10 rounded-2xl shadow-md w-full md:w-1/2 flex flex-col items-center justify-center min-h-[210px]">
-            <Phone className="mb-2" size={24} />
-            <h3 className="text-lg font-medium mb-2">Call Us</h3>
-            <p className="text-sm"><Link href={`tel:${sitedata.mobile}`} >{sitedata.mobile}</Link></p>
-          </div>
+          {/* Headings Row */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="bg-[var(--rv-primary)] text-[var(--rv-white)] shadow-md p-4 min-h-[70px] flex flex-col gap-6 ">
+              <div className="flex flex-col items-center">
+                <PhoneCall size={24} className="mt-4 text-green-400" />
+                <h3 className="text-lg font-medium mt-2">Call Us</h3>
+              </div>
+              <p className="text-sm ">
+                <Link href={`tel:${sitedata.mobile}`}>{sitedata.mobile}</Link>
+              </p>
+            </div>
+            <div className="bg-[var(--rv-primary)] text-[var(--rv-white)] shadow-md p-4 min-h-[70px] flex flex-col gap-6 ">
+              <div className="flex flex-col items-center">
+                <Mails size={24} className="mt-4 text-yellow-400" />
+                <h3 className="text-lg font-medium mt-2">Mail Us</h3>
+              </div>
+              <p className="text-sm break-all">
+                <Link href={`mailto:${sitedata.email}`}>{sitedata.email}</Link>
+              </p>
+            </div>
+            <div className="bg-[var(--rv-primary)] text-[var(--rv-white)] shadow-md p-4 min-h-[70px] flex flex-col gap-6 justify-center items-center">
+              <div className="flex flex-col items-center">
+                <MapPin size={24} className="mt-4 text-red-500" />
+                <h3 className="text-lg font-medium mt-2">Reach Us</h3>
+              </div>
+           <div>
+             <p className="text-sm break-words whitespace-pre-line mb-2">
+  {/* <Link href={sitedata.mapurl}> */}
+    Kolkata Office:- 3A, Ripoon Street, Mezzanine Floor, Kolkata, WB, IN - 700016
+  {/* </Link> */}
+</p>
+<p className="text-sm break-words whitespace-pre-line">
+  {/* <Link href={sitedata.mapurl}> */}
+   Jabalpur Office:- 1345, Home Science Road, Napier Town, Jabalpur, MP, IN - 482001
+  {/* </Link> */}
+</p>
+           </div>
 
-          <div className="bg-[var(--rv-primary)] text-[var(--rv-white)] p-10 rounded-2xl shadow-md w-full md:w-1/2 flex flex-col items-center justify-center min-h-[210px]">
-            <Mail className="mb-2" size={24} />
-            <h3 className="text-lg font-medium mb-2">Mail Us</h3>
-            <p className="text-sm break-all"><Link href={`mailto:${sitedata.email}`}  >{sitedata.email}</Link></p>
+
+            </div>
           </div>
-          <div className="bg-[var(--rv-primary)] text-[var(--rv-white)] p-10 rounded-2xl shadow-md w-full md:w-1/2 min-h-[210px] flex flex-col items-center justify-center">
-            <Mail className="mb-2" size={24} />
-            <h3 className="text-lg font-medium mb-2">Reach Us</h3>
-            <p className="text-sm break-all"><Link href={`${sitedata.mapurl}`}  >{sitedata.address}</Link></p>
-          </div>
-        </div>
       </div>
   
     </div>

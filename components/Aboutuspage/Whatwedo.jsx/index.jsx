@@ -40,7 +40,7 @@ const Whatwedo = () => {
                          transition={{ delay: 0.5, duration: 0.5 }}
                          viewport={{ once: true }}
                        >
-          At InvestIQ Capital, we offer <strong>end-to-end financial solutions</strong> customized to your life goals. Whether you're planning for retirement, purchasing a new home, or securing your child's education, our services are tailored to get you there.
+          At InvestIQ Capital, we offer <strong>End-to-End Financial Solutions</strong> customized to your <strong>Life Goals</strong>. Whether you're planning for <strong>Retirement, Purchasing A New Home, or Securing Your Child's Education</strong>, our services are tailored to get you there.
 
                        </motion.p>
 
@@ -58,7 +58,7 @@ const Whatwedo = () => {
           </motion.div>
             <div className="relative md:col-span-2">
               <Image
-                src="/images/mutalfundwhat.png"
+                src="/investiq/whatwedo.png"
                 alt="About Us"
                 width={400}
                 height={550}

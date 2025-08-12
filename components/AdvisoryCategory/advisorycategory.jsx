@@ -16,7 +16,7 @@ export default function AdvisorCategory() {
   const SECRET_KEY = process.env.NEXT_PUBLIC_SECRET_KEY;
 
 
-  const arnId = "2612";
+  const arnId = process.env.NEXT_PUBLIC_ARN_ID;
   const schemeCategory = "selectByAdvisor";
 
   useEffect(() => {

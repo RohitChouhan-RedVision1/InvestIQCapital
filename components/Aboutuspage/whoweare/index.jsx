@@ -17,7 +17,7 @@ const WhoWeare = ({aboutus,missionVission}) => {
           >
              <div className="relative md:col-span-2">
               <Image
-                src="/images/whowe.webp"
+                src="/investiq/whoweare.png"
                 alt="About Us"
                 width={400}
                 height={550}
@@ -48,7 +48,7 @@ const WhoWeare = ({aboutus,missionVission}) => {
               transition={{ delay: 0.5, duration: 0.5 }}
               viewport={{ once: true }}
             >
-We are a team of seasoned financial experts who prioritize <strong>integrity</strong>, <strong>transparency</strong>, and <strong>client-centricity</strong> in everything we do. Our advisory approach is built on trust, long-term relationships, and delivering consistent value.
+We are a team of seasoned financial experts who prioritize <strong>Integrity</strong>, <strong>Transparency</strong>, and <strong>Client-Centricity</strong> in everything we do. Our advisory approach is built on <strong>Trust</strong>, <strong>Long-Term Relationships</strong>, and <strong>delivering consistent value</strong> .
 
 
             </motion.p>

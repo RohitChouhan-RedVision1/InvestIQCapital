@@ -40,7 +40,7 @@ const HeaderAboutus = ({aboutus}) => {
           </motion.div>
             <div className="relative md:col-span-2">
               <Image
-                src={aboutus[0]?.image?.url}
+                src={"/investiq/aboutus.png"}
                 alt="About Us"
                 width={400}
                 height={550}

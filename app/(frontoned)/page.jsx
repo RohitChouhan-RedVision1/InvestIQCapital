@@ -47,8 +47,8 @@ export default async function Page() {
           <MutalFundSection/>
           <SubscribCard amclogos={amclogos}/>
           <BusinessModel />
-          <Testimonials testimonials={testimonials}/>
-          <Blog blogs={blogs} />
+          {/* <Testimonials testimonials={testimonials}/> */}
+          {/* <Blog blogs={blogs} /> */}
           <LatestNews />
           <FAQ Faqs={Faqs}/>
           

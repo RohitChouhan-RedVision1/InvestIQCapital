@@ -1,5 +1,6 @@
 import { Footer } from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
+import Tickers from "@/components/tickers";
 import Topbar from "@/components/topbar/topbar";
 import { ConnectDB } from "@/lib/db/ConnectDB";
 import { getSiteData, getSocialMedia } from "@/lib/functions";
@@ -48,6 +49,7 @@ export default async function Layout({ children }) {
    
     return (
         <div className="">
+            <Tickers />
             <Navbar sitedata={sitedata} />
             {children}
             <Footer sitedata={sitedata} socialMedia={socialMedia}/>
