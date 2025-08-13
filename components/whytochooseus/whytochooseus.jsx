@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
       >
         
 
-        <div className="flex flex-col lg:flex-row items-start gap-4">
+        <div className="flex flex-col lg:flex-row items-center gap-4" >
           {/* Left: Image + Paragraph (50%) */}
           <motion.div
             className="lg:w-[50%] w-full space-y-6"
@@ -67,12 +67,12 @@ const WhyChooseUs = () => {
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
           >
-            <div className="relative w-full h-[250px] lg:h-[520px] rounded-md overflow-hidden">
+            <div className="relative w-full h-[320px] md:h-[450px] rounded-md overflow-hidden">
               <Image
                 src="/investiq/wcu.png"
                 alt="Analytics"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           

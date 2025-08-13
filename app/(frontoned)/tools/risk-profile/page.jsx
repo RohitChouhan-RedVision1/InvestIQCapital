@@ -169,7 +169,7 @@ const RiskProfile = () => {
           </div>
 
                     {/* Submit Button */}
-                    <Button className="text-[var(--rv-white)] border" type="submit">{!loading ? "Submit" : "Loading..."}</Button>
+                    <Button className="text-[var(--rv-white)] bg-[var(--rv-primary)] border" type="submit">{!loading ? "Submit" : "Loading..."}</Button>
                 </form>
             </Form>
         );
@@ -356,7 +356,7 @@ Here are the answers you provided:
                     </div>
                     <Button
                         onClick={() => handleNextClick(questions[currentQuestionIndex]?.question)}
-                        className="text-[var(--rv-white)] border px-4 py-2 rounded-lg hover:bg-[var(--rv-bg-primary)] hover:text-[var(--rv-white)] w-1/3 "
+                        className="text-[var(--rv-white)] bg-[var(--rv-primary)] border px-4 py-2 rounded-lg hover:bg-[var(--rv-bg-primary)] hover:text-[var(--rv-white)] w-1/3 "
                     >
                         Next
                     </Button>

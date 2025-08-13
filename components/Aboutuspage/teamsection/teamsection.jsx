@@ -59,7 +59,7 @@ const TeamSection = ({ teams }) => {
             transition={{ delay: 0.3, duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Our <span className="text-[var(--rv-secondary)]">Teams</span>
+            Our <span className="text-[var(--rv-secondary)]">Team</span>
           </motion.h2>
 
           <div className="relative">

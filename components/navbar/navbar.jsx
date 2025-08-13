@@ -148,7 +148,7 @@ const handleSearchChange = (e) => {
               <Image
                 src="/logo.png"
                 alt="logo"
-                width={isScrolled ? 100 : 200} // shrink on scroll
+                width={isScrolled ? 170 : 200} // shrink on scroll
                 height={30}
                 className="rounded"
                 // layout="responsive"
@@ -603,7 +603,7 @@ const handleSearchChange = (e) => {
                     </li>
                     <li>
                       <Link
-                        href="/tools/usefullinks"
+                        href="/tools/useful-links"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
                         Useful links

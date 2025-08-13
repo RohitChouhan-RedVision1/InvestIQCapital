@@ -46,3 +46,27 @@ export async function POST(req) {
     return NextResponse.json({ error: error.message || error }, { status: 500 });
   }
 }
+
+
+export async function GET(req) {
+  await ConnectDB();
+
+  try {
+    const { searchParams } = new URL(req.url);
+    const categoryID = searchParams.get("categoryID");
+    const addisstatus = searchParams.get("addisstatus") === "true"; // string to boolean
+
+    // Build query filter
+    const query = {};
+    if (categoryID) {
+      query.logocategory = categoryID;
+    }
+    query.addisstatus = addisstatus; // always filter by addisstatus (default false)
+
+    const filteredData = await AmcsLogoModel.find(query);
+
+    return NextResponse.json({ success: true, data: filteredData }, { status: 200 });
+  } catch (error) {
+    return NextResponse.json({ success: false, error: error.message || error }, { status: 500 });
+  }
+}

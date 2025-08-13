@@ -46,7 +46,7 @@ const ToolsHome = () => {
                       { href: "/tools/financialhealth", icon: <FaHeartbeat size={50} />, title: "Financial Health" },
                       { href: "/tools/riskprofile", icon: <FaShieldAlt size={50} />, title: "Risk Profile" },
                       { href: "/tools/paypremiumonline", icon: <FaCreditCard size={50} />, title: "Pay Premium Online" },
-                      { href: "/tools/usefullinks", icon: <FaExternalLinkAlt size={50} />, title: "Useful links" },
+                      { href: "/tools/useful-links", icon: <FaExternalLinkAlt size={50} />, title: "Useful links" },
                     ].map((item, index) => (
                 <li key={index} className="flex items-center   text-black p-4 rounded-lg hover:scale-105 transition">
                   <a href={item.href} className="flex items-center space-x-4 ">

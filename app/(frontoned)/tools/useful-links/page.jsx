@@ -10,6 +10,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 
 const UsefulLinksPage = () => {
   const [usefulLink, setUsefulLink] = useState([]);
@@ -27,18 +28,11 @@ const UsefulLinksPage = () => {
     fetchLinks();
   }, []);
   return (
-    <div className="pt-20">
-
+    <div className="">
+<InnerBanner pageName="useful links" />
     <div className="">
       <div className="max-w-screen-xl mx-auto main_section">
-            <div className="mb-5 flex flex-col md:flex-row gap-5 justify-between ">
-                  <div className="">
-                    <span className="text-2xl md:text-3xl font-bold uppercase">
-                      Useful Links
-                    </span>
-                  </div>
-                 
-                </div>
+            
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {usefulLink.map((link, index) => (
             <Link href={link.link} key={index} legacyBehavior>

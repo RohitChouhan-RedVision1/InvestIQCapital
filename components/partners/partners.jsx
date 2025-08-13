@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const fadeInVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -17,8 +18,50 @@ const fadeInVariants = {
   })
 };
 
-const SubscribCard = ({amclogos}) => {
-  
+const SubscribCard = () => {
+    const [amcLogoData, setAmcLogoData] = useState([]);
+  const [selectedCategoryId, setSelectedCategoryId] = useState(null);
+
+  useEffect(() => {
+    fetchCategories();
+  }, []);
+
+  useEffect(() => {
+    if (selectedCategoryId) {
+      fetchLogos(selectedCategoryId);
+    }
+  }, [selectedCategoryId]);
+
+  const fetchCategories = async () => {
+    try {
+      const res = await fetch("/api/amc-category");
+      const data = await res.json();
+
+      // Only filter Mutual Funds
+      const mutualFundCategory = data.find(
+        (cat) => cat.title === "Mutual Funds"
+      );
+
+      if (mutualFundCategory) {
+        setSelectedCategoryId(mutualFundCategory._id);
+      }
+    } catch (error) {
+      console.error("Error fetching categories:", error);
+    }
+  };
+
+  const fetchLogos = async (categoryID) => {
+    try {
+      const res = await fetch(`/api/amc-logos?categoryID=${categoryID}&addisstatus=true`);
+      const data = await res.json();
+      if (data.success) {
+        setAmcLogoData(data.data);
+      }
+    } catch (err) {
+      console.error("Failed to fetch AMC Logos:", err);
+    }
+  };
+
 
   return (
     <div className="bg-[var(--rv-ternary)]">
@@ -47,7 +90,7 @@ const SubscribCard = ({amclogos}) => {
         ]}
       >
         <CarouselContent className="-ml-1">
-          {amclogos.map((logo, index) => (
+          {amcLogoData.map((logo, index) => (
             <CarouselItem
               key={index}
               className="pl-1 md:basis-1/2 lg:basis-1/5"
