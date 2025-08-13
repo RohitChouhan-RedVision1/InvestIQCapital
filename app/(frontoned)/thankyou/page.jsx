@@ -1,4 +1,4 @@
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa6";
@@ -6,7 +6,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 const ThankYou = async () => {
   return (
 <>
-<InnerBanner pageName={"Thankyou"} />
+
     <section className="main_section">
       <div className="max-w-screen-xl mx-auto text-center flex flex-col items-center space-y-3">
         <Image src={"/images/thankyou.gif"} width={300} height={100} alt="thankyou" />
