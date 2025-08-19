@@ -9,6 +9,7 @@ import {
   FaShieldAlt,
   FaPiggyBank,
   FaRegLightbulb,
+  FaRegCheckCircle,
 } from "react-icons/fa";
 import TypesServices from "@/components/OurBuisnnessModel/typesServices";
 import TopTaxSavingFunds from "@/components/MutalfundSection/TopPerformanceFund/page"; // Replace if needed
@@ -61,22 +62,42 @@ const WealthManagement = () => {
       {/* Introduction */}
       <div className="max-w-screen-xl mx-auto main_section1">
         <div className="mb-8 flex flex-col md:flex-row items-center md:items-start">
-          <div className="md:w-1/2">
-            <p className="text-lg text-gray-300 text-justify">
-              Wealth management is a comprehensive service that combines
-              financial planning, investment management, and tax strategies to
-              grow and protect your assets. It involves personalized advice and
-              expert portfolio handling to ensure your financial life is aligned
-              with your goals.
-            </p>
-            <p className="text-lg text-gray-300 mt-2 text-justify">
-              Whether you're planning for retirement, children's education, or
-              business succession, wealth management helps you stay on track.
-              With the help of our experienced advisors, you get a
-              goal-oriented strategy and constant monitoring of your portfolio
-              to optimize wealth creation.
-            </p>
-          </div>
+        <div className="md:w-1/2">
+  <p className="text-lg text-gray-300 text-justify">
+   Our Wealth Management services are designed to help you grow and   
+protect your wealth. Our experienced advisors will work with you to:-
+  </p>
+
+   <ul className="space-y-3">
+      <li className="flex items-start space-x-3">
+        <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+        <span className="text-gray-300">
+          Develop a customized investment strategy tailored to your goals and risk   
+tolerance  
+        </span>
+      </li>
+
+      <li className="flex items-start space-x-3">
+        <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+        <span className="text-gray-300">
+         Manage your investments to optimize returns and minimize risk  
+        </span>
+      </li>
+
+      <li className="flex items-start space-x-3">
+        <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+        <span className="text-gray-300">
+          Monitor and adjust your portfolio as needed to ensure it remains aligned   
+with your objectives  
+        </span>
+      </li>
+    </ul>
+
+  <p className="text-lg text-gray-300 mt-4 text-justify">
+    With InvestIQ Capital's Wealth Management services, you can trust that your   
+wealth is in good hands.  
+  </p>
+</div>
           <div className="md:w-1/2 md:pl-8 flex justify-center mt-6 md:mt-0">
             <Image
               src="/Services/wealth-management.webp"
@@ -90,13 +111,13 @@ const WealthManagement = () => {
       </div>
 
       {/* Features */}
-      <div className="max-w-screen-xl mx-auto main_section1">
+      {/* <div className="max-w-screen-xl mx-auto main_section1">
         <h2 className="text-4xl text-[var(--rv-white)] text-center font-bold mb-4">
           Key Benefits of{" "}
           <span className="text-[var(--rv-secondary)]">Wealth Management</span>
         </h2>
         <TypesServices serviceTypes={wealthFeatures} />
-      </div>
+      </div> */}
 
       {/* Placeholder for Top Strategies */}
       <div className="max-w-screen-xl mx-auto main_section1">

@@ -9,6 +9,7 @@ import {
   FaChartPie,
   FaCoins,
   FaBullseye,
+  FaRegCheckCircle,
 } from "react-icons/fa";
 import TypesServices from "@/components/OurBuisnnessModel/typesServices";
 import TopTaxSavingFunds from "@/components/MutalfundSection/TopPerformanceFund/page"; // Replace if needed
@@ -61,21 +62,41 @@ const FinancialPlanning = () => {
       {/* Introduction */}
       <div className="max-w-screen-xl mx-auto main_section1">
         <div className="mb-8 flex flex-col md:flex-row items-center md:items-start">
-          <div className="md:w-1/2">
-            <p className="text-lg text-gray-300 text-justify">
-              Financial planning is the process of aligning your income,
-              investments, and expenditures to achieve your short-term and
-              long-term financial goals. It offers a structured approach to
-              managing your finances with clarity and confidence.
-            </p>
-            <p className="text-lg text-gray-300 mt-2 text-justify">
-              A solid financial plan covers budgeting, saving, investing, tax
-              planning, retirement preparation, and family protection. With
-              expert advice and goal-based strategies, financial planning helps
-              you gain control over your money and secure a better financial
-              future.
-            </p>
-          </div>
+         <div className="md:w-1/2">
+           <p className="text-lg text-gray-300 text-justify">
+            Our Financial Planning services help you create a comprehensive plan to   
+achieve your financial goals. Our advisors will work with you to:-
+           </p>
+         
+            <ul className="space-y-3">
+               <li className="flex items-start space-x-3">
+                 <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                
+                 <span className="text-gray-300">
+                   Assess your current financial situation and identify areas for improvement    
+                 </span>
+               </li>
+         
+               <li className="flex items-start space-x-3">
+                 <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                 <span className="text-gray-300">
+                  Develop a customized financial plan tailored to your goals and objectives  
+                 </span>
+               </li>
+         
+               <li className="flex items-start space-x-3">
+                 <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                 <span className="text-gray-300">
+                    Provide guidance on investment, tax, retirement, and estate planning   
+                 </span>
+               </li>
+             </ul>
+         
+           <p className="text-lg text-gray-300 mt-4 text-justify">
+             With InvestIQ Capital's Financial Planning services, you can gain clarity and   
+confidence in your financial decisions.   
+           </p>
+         </div>
           <div className="md:w-1/2 md:pl-8 flex justify-center mt-6 md:mt-0">
             <Image
               src="/Services/financial-planning.webp"
@@ -89,13 +110,13 @@ const FinancialPlanning = () => {
       </div>
 
       {/* Features */}
-      <div className="max-w-screen-xl mx-auto main_section1">
+      {/* <div className="max-w-screen-xl mx-auto main_section1">
         <h2 className="text-4xl text-[var(--rv-white)] text-center font-bold mb-4">
           Key Benefits of{" "}
           <span className="text-[var(--rv-secondary)]">Financial Planning</span>
         </h2>
         <TypesServices serviceTypes={planningFeatures} />
-      </div>
+      </div> */}
 
       {/* Strategic Tools / Placeholder */}
       <div className="max-w-screen-xl mx-auto main_section1">

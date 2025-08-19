@@ -148,7 +148,7 @@ const handleSearchChange = (e) => {
               <Image
                 src="/logo.png"
                 alt="logo"
-                width={isScrolled ? 170 : 200} // shrink on scroll
+                width={isScrolled ? 140 : 170} // shrink on scroll
                 height={30}
                 className="rounded"
                 // layout="responsive"

@@ -74,7 +74,7 @@ export function Footer({sitedata,socialMedia}) {
               <Image
                 src="/logo.png"
                 alt="Logo"
-                width={200} 
+                width={170} 
                 height={100}
               />
             </Link>

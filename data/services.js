@@ -46,7 +46,7 @@ export const productData = [
     imageSrc: "/images/services/mutual-funds.jpg",
   },
   {
-    name: "Insurance Planning",
+    name: "Insurance Options",
     link: "/products/insurance",
     description:
       "Insurance protects your family, health, and assets in times of need.We recommend the right mix of term life, health insurance, and general cover.Our role is to find affordable and effective plans, not just sell policies.We also assist during claims to ensure a smooth process when it matters most.",
@@ -59,16 +59,16 @@ export const productData = [
     imageSrc: "/images/services/retirement.jpg",
   },
   {
-    name: "Bonds",
-    link: "/products/bonds",
+    name: "Direct Equity",
+    link: "/products/direct-equity",
     description:
-      "Bonds are low-risk investments that give fixed returns over time.We pick government and corporate bonds with good credit ratings.They are ideal for conservative investors looking for capital protection.Our team manages the bond portfolio and rebalances it for better returns.",
+      "Direct equity investing involves buying and selling individual stocks. It offers potential for long-term growth and dividend income, making it suitable for investors willing to take calculated risks.",
     imageSrc: "/images/services/tax.jpg",
     children: [],
   },
   {
-    name: "Corporate FDs",
-    link: "/products/corporate-fds",
+    name: "Fixed Income Options: Corporate FDs and Bonds  ",
+    link: "/products/corporate-fds-and-bonds",
     description:
       "These are fixed-income investments from well-rated companies offering better returns than banks.We help you choose secure options based on your time horizon and risk level.You earn steady interest income, and your capital stays protected.We handle all paperwork and renewals, so your investments stay hassle-free.",
     imageSrc: "/images/services/corporate-fds.jpg",

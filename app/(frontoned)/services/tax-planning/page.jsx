@@ -9,6 +9,7 @@ import {
   FaUniversity,
   FaFileContract,
   FaLightbulb,
+  FaRegCheckCircle,
 } from "react-icons/fa";
 import TypesServices from "@/components/OurBuisnnessModel/typesServices";
 import TopTaxSavingFunds from "@/components/MutalfundSection/TopPerformanceFund/page"; // Optional placeholder
@@ -62,21 +63,47 @@ const TaxPlanning = () => {
       <div className="max-w-screen-xl mx-auto main_section1">
         <div className="mb-8 flex flex-col md:flex-row items-center md:items-start">
           <div className="md:w-1/2">
-            <p className="text-lg text-gray-300 text-justify">
-              Tax planning is a vital part of personal financial management that
-              ensures you pay the minimum legal amount of taxes while staying
-              compliant. Strategic tax planning not only saves money but also
-              helps you plan better for the future through smart investment
-              choices.
-            </p>
-            <p className="text-lg text-gray-300 mt-2 text-justify">
-              With expert assistance, you can take advantage of all eligible
-              deductions, exemptions, and rebates. Whether you're a salaried
-              individual, business owner, or professional, our tax planning
-              services will help you maximize income, reduce liabilities, and
-              meet long-term goals efficiently.
-            </p>
-          </div>
+                    <p className="text-lg text-gray-300 text-justify">
+                     Our Tax Planning services are designed to help you minimize your tax   
+liability and maximize your savings. Our experienced advisors will work with   
+you to :-
+                    </p>
+                  
+                     <ul className="space-y-3">
+                        <li className="flex items-start space-x-3">
+                          <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                         
+                          <span className="text-gray-300">
+                            Identify tax-saving opportunities and strategies      
+                          </span>
+                        </li>
+                  
+                        <li className="flex items-start space-x-3">
+                          <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                          <span className="text-gray-300">
+                           Develop a customized tax plan tailored to your financial goals and situation    
+                          </span>
+                        </li>
+                  
+                        <li className="flex items-start space-x-3">
+                          <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                          <span className="text-gray-300">
+                             Provide guidance on tax-efficient investments and financial decisions     
+                          </span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                          <span className="text-gray-300">
+                            We also provide ITR Filling service  
+                          </span>
+                        </li>
+                      </ul>
+                  
+                    <p className="text-lg text-gray-300 mt-4 text-justify">
+                      With InvestIQ Capital's Tax Planning services, you can reduce your tax   
+burden and keep more of your hard-earned money.   
+                    </p>
+                  </div>
           <div className="md:w-1/2 md:pl-8 flex justify-center mt-6 md:mt-0">
             <Image
               src="/Services/tax-planning-1.jpg"
@@ -90,13 +117,13 @@ const TaxPlanning = () => {
       </div>
 
       {/* Features */}
-      <div className="max-w-screen-xl mx-auto main_section1">
+      {/* <div className="max-w-screen-xl mx-auto main_section1">
         <h2 className="text-4xl text-[var(--rv-white)] text-center font-bold mb-4">
           Benefits of <span className="text-[var(--rv-secondary)]">Tax Planning</span>
         </h2>
 
         <TypesServices serviceTypes={taxPlanningFeatures} />
-      </div>
+      </div> */}
 
       {/* Tax Saving Investments Section */}
       <div className="max-w-screen-xl mx-auto main_section1">

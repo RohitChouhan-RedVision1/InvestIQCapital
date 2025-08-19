@@ -9,40 +9,31 @@ import {
   FaHandshake,
   FaCubes,
   FaBalanceScaleRight,
+  FaRegCheckCircle,
+  FaProjectDiagram,
 } from "react-icons/fa";
 import TypesServices from "@/components/OurBuisnnessModel/typesServices";
 import TopTaxSavingFunds from "@/components/MutalfundSection/TopPerformanceFund/page"; // Reuse or replace with AIF-specific component
+import { FaUserTie } from "react-icons/fa6";
 
 const aifFeatures = [
   {
+    icon: <FaProjectDiagram className="text-3xl text-primary" />,
+    title: "Diversification",
+    description:
+      "Alternative asset classes can provide diversification benefits.",
+  },
+  {
     icon: <FaChartLine className="text-3xl text-primary" />,
-    title: "High Return Potential",
+    title: "Potential for High Returns",
     description:
-      "AIFs invest in niche and high-growth sectors aiming for superior returns compared to traditional assets.",
+      "AIFs can offer high returns over the long term.",
   },
   {
-    icon: <FaUserShield className="text-3xl text-primary" />,
-    title: "Regulated Investment",
+    icon: <FaUserTie className="text-3xl text-primary" />,
+    title: "Expertise",
     description:
-      "AIFs are regulated by SEBI and follow a well-defined structure to protect investor interests.",
-  },
-  {
-    icon: <FaHandshake className="text-3xl text-primary" />,
-    title: "Exclusive Investment Opportunities",
-    description:
-      "Access unique assets like private equity, real estate, hedge funds, and more, not available in public markets.",
-  },
-  {
-    icon: <FaCubes className="text-3xl text-primary" />,
-    title: "Diversification Beyond Traditional",
-    description:
-      "AIFs allow diversification beyond equity and debt by exploring alternate asset classes.",
-  },
-  {
-    icon: <FaBalanceScaleRight className="text-3xl text-primary" />,
-    title: "Strategic Risk Management",
-    description:
-      "Fund managers use strategies like hedging, structured deals, and asset rotation for optimized risk-reward.",
+      "AIF managers have expertise in alternative asset classes.",
   },
 ];
 
@@ -62,21 +53,37 @@ const AIF = () => {
         {/* Introduction with Image */}
         <div className="mb-8 flex flex-col md:flex-row items-center md:items-start">
           <div className="md:w-1/2">
-            <p className="text-lg text-gray-300 text-justify">
-              Alternative Investment Funds (AIFs) are pooled investment vehicles
-              that invest in private equity, venture capital, hedge funds,
-              infrastructure, and other unconventional avenues. Tailored for
-              high-net-worth individuals (HNIs), AIFs are designed to provide
-              strategic diversification and high return potential.
-            </p>
-            <p className="text-lg text-gray-300 mt-2 text-justify">
-              Managed by experienced professionals, AIFs operate under strict
-              regulatory frameworks and offer exposure to exclusive investment
-              strategies not typically available in mutual funds or direct
-              equity. They are ideal for investors seeking non-traditional,
-              high-reward opportunities with controlled risk.
-            </p>
-          </div>
+                      <p className="text-lg text-gray-300 text-justify">
+                        Alternative Investment Funds (AIFs) provide investment opportunities in   
+alternative asset classes like private equity, real estate, or hedge funds. 
+They're suitable for sophisticated investors seeking diversification and   
+potentially higher returns. With AIFs, you can invest in unique asset classes   
+and diversify your portfolio. With InvestIQ Capital, you can:-
+                      </p>
+          
+                      <ul className="space-y-3 mt-4">
+                        <li className="flex items-start space-x-3">
+                          <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                          <span className="text-gray-300">
+                            Invest in alternative asset classes to diversify your portfolio  
+                          </span>
+                        </li>
+          
+                        <li className="flex items-start space-x-3">
+                          <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                          <span className="text-gray-300">
+                            Benefit from potential high returns and diversification benefits  
+                          </span>
+                        </li>
+          
+                        <li className="flex items-start space-x-3">
+                          <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                          <span className="text-gray-300">
+                            Choose from a range of AIF options to suit your investment goals  
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
           <div className="md:w-1/2 md:pl-8 flex justify-center mt-6 md:mt-0">
             <Image
               src="/Services/aif-1.jpg"

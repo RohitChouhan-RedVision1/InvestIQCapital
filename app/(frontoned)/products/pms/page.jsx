@@ -9,6 +9,7 @@ import {
   FaHandHoldingUsd,
   FaUserTie,
   FaGlobeAsia,
+  FaRegCheckCircle,
 } from "react-icons/fa";
 import TypesServices from "@/components/OurBuisnnessModel/typesServices";
 
@@ -19,35 +20,36 @@ export const metadata = {
 };
 
 const pmsFeatures = [
-  {
-    icon: <FaBriefcase className="text-3xl text-primary" />,
-    title: "Customized Portfolios",
-    description:
-      "Tailor-made investment strategies aligned with your financial goals, risk profile, and preferences.",
-  },
-  {
-    icon: <FaChartLine className="text-3xl text-primary" />,
-    title: "Active Management",
-    description:
-      "Portfolios are actively monitored and adjusted based on market movements and opportunities.",
-  },
+  
+  // {
+  //   icon: <FaChartLine className="text-3xl text-primary" />,
+  //   title: "Active Management",
+  //   description:
+  //     "Portfolios are actively monitored and adjusted based on market movements and opportunities.",
+  // },
   {
     icon: <FaHandHoldingUsd className="text-3xl text-primary" />,
-    title: "High Return Potential",
+    title: "Professional Management",
     description:
-      "Invest in high-conviction ideas across equities, sectors, and themes for superior long-term returns.",
+      "Experienced fund managers make informed investment decisions  ",
   },
   {
-    icon: <FaUserTie className="text-3xl text-primary" />,
-    title: "Expert Fund Managers",
+    icon: <FaBriefcase className="text-3xl text-primary" />,
+    title: "Customization",
     description:
-      "Managed by experienced professionals with a proven track record in wealth creation.",
+      "Portfolios are tailored to your individual goals and risk tolerance  ",
   },
+  // {
+  //   icon: <FaUserTie className="text-3xl text-primary" />,
+  //   title: "Expert Fund Managers",
+  //   description:
+  //     "Managed by experienced professionals with a proven track record in wealth creation.",
+  // },
   {
     icon: <FaGlobeAsia className="text-3xl text-primary" />,
-    title: "Transparency & Reporting",
+    title: "Regular Updates",
     description:
-      "Get regular performance reports, portfolio updates, and market outlooks for full visibility.",
+      "Receive regular updates and portfolio rebalancing",
   },
 ];
 
@@ -61,21 +63,45 @@ const PMS = () => {
         {/* Introduction */}
         <div className="mb-8 flex flex-col md:flex-row items-center md:items-start">
           <div className="md:w-1/2">
-            <p className="text-lg text-gray-300 text-justify">
-              Portfolio Management Services (PMS) offer personalized investment
-              solutions tailored for high-net-worth individuals. Whether you're
-              aiming for capital appreciation or wealth preservation, PMS helps
-              you achieve your financial goals through professional management
-              and customized strategies.
-            </p>
-            <p className="text-lg text-gray-300 mt-2 text-justify">
-              With PMS, your funds are managed by seasoned portfolio managers
-              who create diversified and focused portfolios across equity and
-              other asset classes. It’s ideal for investors looking for
-              long-term growth and strategic asset allocation with higher
-              flexibility and transparency.
-            </p>
-          </div>
+                               <p className="text-lg text-gray-300 text-justify">
+                               Portfolio Management Services (PMS) offer professionally managed   
+investment portfolios tailored to individual investor goals and risk tolerance.   
+With PMS, you can benefit from experienced fund managers and research
+driven investment decisions, making it an ideal option for those seeking   
+expert guidance. With InvestIQ Capital, you can:  
+          :-
+                               </p>
+                             
+                                <ul className="space-y-3">
+                                   <li className="flex items-start space-x-3">
+                                     <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                                    
+                                     <span className="text-gray-300">
+                                         Benefit from experienced fund managers and research-driven investment   
+decisions        
+                                     </span>
+                                   </li>
+                             
+                                   <li className="flex items-start space-x-3">
+                                     <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                                     <span className="text-gray-300">
+                                       Choose from a range of portfolio options to suit your investment goals  
+                                     </span>
+                                   </li>
+                             
+                                   <li className="flex items-start space-x-3">
+                                     <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                                     <span className="text-gray-300">
+                                        Receive regular updates and portfolio rebalancing  
+                                     </span>
+                                   </li>
+                                 </ul>
+          {/*                    
+                               <p className="text-lg text-gray-300 mt-4 text-justify">
+                                 With InvestIQ Capital's Financial Planning services, you can gain clarity and   
+                    confidence in your financial decisions.   
+                               </p> */}
+                             </div>
           <div className="md:w-1/2 md:pl-8 flex justify-center mt-6 md:mt-0">
             <Image
               src="/Services/pms-1.jpg"
@@ -91,7 +117,7 @@ const PMS = () => {
       {/* Features Section */}
       <div className="max-w-screen-xl mx-auto main_section1">
         <h2 className="text-4xl text-[var(--rv-white)] text-center font-bold mb-4">
-          Features of{" "}
+          Key Benefits of{" "}
           <span className="text-[var(--rv-secondary)]">PMS</span>
         </h2>
         <TypesServices serviceTypes={pmsFeatures} />

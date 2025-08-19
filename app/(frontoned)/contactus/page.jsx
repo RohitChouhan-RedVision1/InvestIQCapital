@@ -41,12 +41,12 @@ export default async function ContactUs() {
            <div>
              <p className="text-sm break-words whitespace-pre-line mb-2">
   {/* <Link href={sitedata.mapurl}> */}
-    Kolkata Office:- 3A, Ripoon Street, Mezzanine Floor, Kolkata, WB, IN - 700016
+    <strong>Kolkata Office</strong>:- 3A, Ripoon Street, Mezzanine Floor, Kolkata, WB, IN - 700016
   {/* </Link> */}
 </p>
 <p className="text-sm break-words whitespace-pre-line">
   {/* <Link href={sitedata.mapurl}> */}
-   Jabalpur Office:- 1345, Home Science Road, Napier Town, Jabalpur, MP, IN - 482001
+   <strong>Jabalpur Office</strong>:- 1345, Home Science Road, Napier Town, Jabalpur, MP, IN - 482001
   {/* </Link> */}
 </p>
            </div>

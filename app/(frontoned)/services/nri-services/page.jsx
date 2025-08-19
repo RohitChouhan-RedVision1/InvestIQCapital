@@ -9,6 +9,7 @@ import {
   FaLandmark,
   FaUserShield,
   FaChartPie,
+  FaRegCheckCircle,
 } from "react-icons/fa";
 import TypesServices from "@/components/OurBuisnnessModel/typesServices";
 import TopTaxSavingFunds from "@/components/MutalfundSection/TopPerformanceFund/page"; // Optional placeholder
@@ -61,21 +62,42 @@ const NriServices = () => {
       {/* Intro Section */}
       <div className="max-w-screen-xl mx-auto main_section1">
         <div className="mb-8 flex flex-col md:flex-row items-center md:items-start">
-          <div className="md:w-1/2">
-            <p className="text-lg text-gray-300 text-justify">
-              Managing finances from outside India can be challenging due to
-              regulatory complexities and time zone differences. Our NRI
-              services provide a one-stop solution for all your financial needs
-              in India — including investments, taxation, estate planning, and
-              real estate.
-            </p>
-            <p className="text-lg text-gray-300 mt-2 text-justify">
-              With a team of experts who understand both Indian laws and global
-              NRI concerns, we help you make informed decisions to grow and
-              protect your wealth while staying compliant with FEMA, RBI, and
-              taxation regulations.
-            </p>
-          </div>
+           <div className="md:w-1/2">
+                     <p className="text-lg text-gray-300 text-justify">
+                      Our As an NRI, managing your finances in India can be challenging. Our NRI   
+Services are designed to provide you with expert guidance and support. Our   
+advisors will help you with:  -
+                     </p>
+                   
+                      <ul className="space-y-3">
+                         <li className="flex items-start space-x-3">
+                           <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                          
+                           <span className="text-gray-300">
+                             Investment options and strategies for NRIs  
+                           </span>
+                         </li>
+                   
+                         <li className="flex items-start space-x-3">
+                           <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                           <span className="text-gray-300">
+                            Tax planning and compliance for NRIs  
+                           </span>
+                         </li>
+                   
+                         <li className="flex items-start space-x-3">
+                           <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                           <span className="text-gray-300">
+                              Portfolio management and wealth management services  
+                           </span>
+                         </li>
+                       </ul>
+                   
+                     <p className="text-lg text-gray-300 mt-4 text-justify">
+                       With InvestIQ Capital's NRI Services, you can trust that your financial   
+interests in India are being taken care of.
+                     </p>
+                   </div>
           <div className="md:w-1/2 md:pl-8 flex justify-center mt-6 md:mt-0">
             <Image
               src="/Services/nri-services.webp"
@@ -89,14 +111,14 @@ const NriServices = () => {
       </div>
 
       {/* Feature Cards */}
-      <div className="max-w-screen-xl mx-auto main_section1">
+      {/* <div className="max-w-screen-xl mx-auto main_section1">
         <h2 className="text-4xl text-[var(--rv-white)] text-center font-bold mb-4">
           What We Offer to{" "}
           <span className="text-[var(--rv-secondary)]">NRIs</span>
         </h2>
 
         <TypesServices serviceTypes={nriFeatures} />
-      </div>
+      </div> */}
 
       {/* Tools/Advisory */}
       <div className="max-w-screen-xl mx-auto main_section1">

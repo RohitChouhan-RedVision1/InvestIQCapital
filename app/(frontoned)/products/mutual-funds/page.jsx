@@ -10,6 +10,7 @@ import {
   FaPiggyBank,
   FaReceipt,
   FaChartBar,
+  FaRegCheckCircle,
 } from "react-icons/fa";
 import TypesServices from "@/components/OurBuisnnessModel/typesServices";
 import TopTaxSavingFunds from "@/components/MutalfundSection/TopPerformanceFund/page";
@@ -17,34 +18,23 @@ import TopTaxSavingFunds from "@/components/MutalfundSection/TopPerformanceFund/
 const fundTypes = [
   {
     icon: <FaBalanceScale className="text-3xl text-primary" />,
-    title: "Diversification",
+    title: " Diversification",
     description:
-      "Spread your investments across various asset classes to reduce risk.",
+      " Spread risk across multiple assets and sectors  ",
   },
   {
     icon: <FaUserTie className="text-3xl text-primary" />,
     title: "Professional Management",
     description:
-      "Your investment is managed by expert fund managers who make decisions based on market conditions.",
+      "Experienced fund managers make informed investment decisions",
   },
   {
     icon: <FaMoneyBillWave className="text-3xl text-primary" />,
-    title: "Liquidity",
+    title: "Convenience",
     description:
-      "Mutual funds can be easily bought or sold, providing flexibility to access your money when needed.",
+      "Easy to invest and track your portfolio",
   },
-  {
-    icon: <FaPiggyBank className="text-3xl text-primary" />,
-    title: "Affordable",
-    description:
-      "You don’t need a large amount to start investing in mutual funds, making them accessible to a wide range of investors.",
-  },
-  {
-    icon: <FaReceipt className="text-3xl text-primary" />,
-    title: "Tax Benefits",
-    description:
-      "Certain mutual funds like ELSS offer tax-saving opportunities under the relevant sections of tax laws.",
-  },
+ 
   // {
   //   icon: <FaChartBar className="text-3xl text-primary" />,
   //   title: "Transparency",
@@ -69,22 +59,47 @@ const MutualFunds = () => {
         {/* Introduction with Image */}
         <div className="mb-8 flex flex-col md:flex-row items-center md:items-start">
           <div className="md:w-1/2">
-            <p className="text-lg text-gray-300 items-center text-justify">
-              Mutual funds are an excellent way to grow your wealth while
-              reducing individual investment risk. By pooling resources from
-              multiple investors, mutual funds provide you with exposure to a
-              variety of asset classes like equities, bonds, and more. With
-              professional management, they offer a balanced approach to
-              building wealth for both beginners and seasoned investors.
-            </p>
-            <p className="text-lg text-gray-300 mt-2 text-justify items-center">
-              A mutual fund is a pool of funds collected from investors and
-              invested in a diverse set of financial instruments like stocks,
-              bonds, and other securities. These funds are managed by
-              experienced fund managers who allocate investments across various
-              asset classes to ensure diversified and risk-adjusted returns.
-            </p>
-          </div>
+                     <p className="text-lg text-gray-300 text-justify">
+                      Mutual funds are an excellent way to grow your wealth while reducing   
+individual investment risk. By pooling resources from multiple investors,   
+mutual funds provide you with exposure to a variety of asset classes like   
+equities, bonds, and more. With professional management, they offer a   
+balanced approach to building wealth for both beginners and seasoned   
+investors. With InvestIQ Capital, you can:  
+:-
+                     </p>
+                   
+                      <ul className="space-y-3">
+                         <li className="flex items-start space-x-3">
+                           <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                          
+                           <span className="text-gray-300">
+                              Invest in a wide range of mutual fund categories, including equity, debt,   
+hybrid, and more      
+                           </span>
+                         </li>
+                   
+                         <li className="flex items-start space-x-3">
+                           <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                           <span className="text-gray-300">
+                            Choose from a variety of fund managers and investment styles  
+                           </span>
+                         </li>
+                   
+                         <li className="flex items-start space-x-3">
+                           <FaRegCheckCircle className="text-green-600 text-xl flex-shrink-0 mt-1" />
+                           <span className="text-gray-300">
+                              Benefit from professional fund management and research-driven   
+investment decisions     
+                           </span>
+                         </li>
+                       </ul>
+{/*                    
+                     <p className="text-lg text-gray-300 mt-4 text-justify">
+                       With InvestIQ Capital's Financial Planning services, you can gain clarity and   
+          confidence in your financial decisions.   
+                     </p> */}
+                   </div>
           <div className="md:w-1/2 md:pl-8 flex justify-center mt-6 md:mt-0">
             <Image
               src="/Services/mutual-fund-1.jpg"
@@ -100,7 +115,7 @@ const MutualFunds = () => {
       <div className="max-w-screen-xl mx-auto main_section1">
         {/* Types of Mutual Funds */}
         <h2 className="text-4xl text-[var(--rv-white)] text-center font-bold mb-4">
-          Features of{" "}
+          Key Benefits of{" "}
           <span className="text-[var(--rv-secondary)]">Mutual Funds</span>
         </h2>
 
